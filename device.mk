@@ -34,6 +34,10 @@ PRODUCT_PACKAGES += \
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
+    OPlusSystemUIResTarget \
+    OPlusWifiResTarget \
+    XtendedFrameworksResTarget \
+    XtendedSettingsResTarget
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
