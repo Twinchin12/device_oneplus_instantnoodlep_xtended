@@ -30,14 +30,16 @@ PRODUCT_PACKAGES += \
     OPlusExtrasResTarget \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
-    OPlusSystemUIResTarget
-
-# Shipping API
-PRODUCT_SHIPPING_API_LEVEL := 29
-    OPlusSystemUIResTarget \
     OPlusWifiResTarget \
     XtendedFrameworksResTarget \
-    XtendedSettingsResTarget
+    XtendedSettingsResTarget \
+    packages
+    
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-xtended
+    
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
